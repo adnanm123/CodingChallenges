@@ -1,4 +1,4 @@
-const { addOne, addExclamation } = require('../code-challenges/challenge-01');
+const { addOne, addExclamation, allUpperCase } = require('../code-challenges/challenge-01');
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
