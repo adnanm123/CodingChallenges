@@ -54,5 +54,30 @@ const allUpperCase = (str) => {
   return uppercaseStr;
 };
 
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 4
 
-module.exports = {addOne, addExclamation, allUpperCase };
+Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters, and followed by an "!".
+
+Then, write a function named `speaker` that takes in an array of strings and a callback function.
+
+Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array.
+------------------------------------------------------------------------------------------------ */
+
+const greeting = (str) => {
+  return str.toUpperCase() + "!";
+};
+
+const speaker = (arr, callback) => {
+  let newArr = []
+
+  arr.forEach(w => {
+    newArr.push(callback(w));
+  });
+  
+  return newArr;
+}
+
+
+
+module.exports = {addOne, addExclamation, allUpperCase, greeting, speaker };
