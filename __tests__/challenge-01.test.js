@@ -1,4 +1,4 @@
-const { addOne, addExclamation, allUpperCase, speaker, greeting, addValues, addNumbers, createList} = require('../code-challenges/challenge-01');
+const { addOne, addExclamation, allUpperCase, speaker, greeting, addValues, addNumbers, createList, fizzbuzz} = require('../code-challenges/challenge-01');
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
@@ -51,7 +51,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
