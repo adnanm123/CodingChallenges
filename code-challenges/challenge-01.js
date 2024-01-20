@@ -136,7 +136,38 @@ const createList = (arr) => {
     return newList;
 }
 
+/* ------------------------------------------------------------------------------------------------
+STRETCH - CHALLENGE 7
+
+Write a function named fizzbuzz that takes in an array of numbers.
+
+Iterate over the array using forEach to determine the output based on several rules:
+  - If a number is divisible by 3, add the word "Fizz" to the output array.
+  - If the number is divisible by 5, add the word "Buzz" to the output array.
+  - If the number is divisible by both 3 and 5, add the phrase "Fizz Buzz" to the output array.
+  - Otherwise, add the number to the output array.
+
+Return the resulting output array.
+------------------------------------------------------------------------------------------------ */
+
+const fizzbuzz = (num) => {
+  const numArr = [];
+
+  num.forEach(n => {
+    if (n % 3 === 0 && n % 5 === 0) {
+      numArr.push("Fizz Buzz");
+    } else if (n % 3 === 0) {
+      numArr.push("Fizz");
+    } else if (n % 5 === 0) {
+      numArr.push("Buzz");
+    } else {
+      numArr.push(n);
+    }
+  });
+
+  return numArr;
+};
 
 
 
-module.exports = {addOne, addExclamation, allUpperCase, greeting, speaker, addValues, addNumbers, createList};
+module.exports = {addOne, addExclamation, allUpperCase, greeting, speaker, addValues, addNumbers, createList, fizzbuzz};
