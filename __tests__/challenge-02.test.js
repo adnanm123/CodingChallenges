@@ -1,3 +1,6 @@
+const { raisedToTheThird} = require('../code-challenges/challenge-02');
+
+
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
