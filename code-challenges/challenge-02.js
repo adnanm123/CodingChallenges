@@ -27,4 +27,15 @@ const addOne = (arr) => {
   return arr.map(a => a + 1);
 };
 
-module.exports = {raisedToTheThird, addOne};
+/*
+------------------------------------------------------------------------------------------------
+CHALLENGE 3
+
+Write a function named addQuestion that, given an array of strings, uses map to return a new array containing each string followed by a question mark character.
+------------------------------------------------------------------------------------------------ */
+
+const addQuestion = (str) => {
+  return str.map(s => s + '?');
+}
+
+module.exports = {raisedToTheThird, addOne, addQuestion};
