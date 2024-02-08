@@ -1,4 +1,4 @@
-const { raisedToTheThird} = require('../code-challenges/challenge-02');
+const { raisedToTheThird, addOne} = require('../code-challenges/challenge-02');
 
 
 /* ------------------------------------------------------------------------------------------------
