@@ -16,5 +16,15 @@ const raisedToTheThird = (arr) => {
     return newArr;
 };
 
+/*
+------------------------------------------------------------------------------------------------
+CHALLENGE 2
 
-module.exports = {raisedToTheThird};
+Write a function named addOne that, given an array of numbers, uses map to return a new array with each value simply incremented by 1.
+------------------------------------------------------------------------------------------------ */
+
+const addOne = (arr) => {
+  return arr.map(a => a + 1);
+};
+
+module.exports = {raisedToTheThird, addOne};
