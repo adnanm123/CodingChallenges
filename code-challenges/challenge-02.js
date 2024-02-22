@@ -54,4 +54,18 @@ const forLoopTwoToThe = (int) => {
   return int.map( n => Math.pow(2, n));
 }
 
-module.exports = {raisedToTheThird, addOne, addQuestion, forLoopTwoToThe};
+/*
+------------------------------------------------------------------------------------------------
+CHALLENGE 5
+
+Write a function named forEachTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 4, but uses forEach instead of a for loop.
+------------------------------------------------------------------------------------------------ */
+
+const forEachTwoToThe = (int) => {
+
+  let newarr = []
+  int.forEach(value => newarr.push(Math.pow(2, value)));
+  return newarr;
+}
+
+module.exports = {raisedToTheThird, addOne, addQuestion, forLoopTwoToThe, forEachTwoToThe};
